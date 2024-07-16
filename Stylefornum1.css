@@ -1,36 +1,81 @@
+.Listnavbar{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Listnavbar li{
+    display: inline;
+    float: left;
+    border: solid rgb(160, 104, 0) 3px;
+    background-color: rgb(255, 166, 0); 
+    border-radius: 10px;
+}
+
+.Listnavbar a{
+    text-decoration: none;
+    font-size: 70px;
+    color: black;
+    text-align: center;
+    
+}
+
+.Listnavbar a:hover, .Listnavbar a:active{
+    text-decoration: none;
+    font-size: 70px;
+    color: white;
+    background-color: rgb(254, 180, 42);
+    border-radius: 10px;
+}
+
 .container{
     text-align:center; 
-
     width: 400px;
-
     height: 50px;
-
     font-family: 'Times New Roman',Times, serif; 
-
     margin: 200px auto;
-
-    position:relative
-
+    position:relative;
+    margin-top: 400px;
 }
 
 .hjärtegrupp {
     position: absolute;
-
-    color: red;
-
-    top: 50%;
-
+    color: orange;
     left: 50%;
-
     transform: translate(-50%, -50%);
-
     font-size: 60px;
-
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: -1;
+}
+
+.Spov{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.Spov2:link, .Spov2:visited {
+    font-size: 50px;
+    text-decoration: none;
+    border: 2px solid rgb(160, 104, 0);
+    color: black;
+    display: inline-block;
+    background-color: rgb(255, 166, 0);
+    border-radius: 10px;
+}
+
+.Spov2:hover, .Spov2:active{
+    background-color: rgb(254, 180, 42);
+    color: white;
+    background-color: rgb(255, 183, 48);
+    border-radius: 10px;
 }
 
 body{
-    background-color: pink;
+    background-image: url(lunnis_resized.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h2{
@@ -38,15 +83,18 @@ h2{
 }
 
 .text2{
-    color: rgb(73, 195, 217);
-
+    color: orange;
     text-align: center;
-
     font-size: 100px;
-
     border: 2px groove rgb(0, 0, 0);
-
     background-image: url(Whitedog.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .imageone{
@@ -62,6 +110,50 @@ h2{
 a{
     font-size: 100px;
 }
+
+.container2{
+    text-align:center; 
+    width: 400px;
+    height: 50px;
+    font-family: 'Times New Roman',Times, serif; 
+    margin: 200px auto;
+    position:relative
+
+}
+
+.Cajsalänk{
+    font-size: 50px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.Cajsalänk:link, .Cajsalänk:visited {
+    font-size: 50px;
+    text-decoration: none;
+    border: 2px solid rgb(160, 104, 0);
+    color: black;
+    display: inline-block;
+    background-color: rgb(255, 166, 0);
+}
+
+.Cajsalänk:hover, .Cajsalänk:active{
+    background-color: rgb(254, 180, 42);
+    color: white;
+    background-color: rgb(255, 183, 48);
+}
+
+
+.Cajsasnurran {
+    position: absolute;
+    color: orange;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .Cajsasnurr{
         top: 0%;
         left: 50%;
@@ -69,6 +161,7 @@ a{
         height: 200px;
         transform: translateX(-50%);
         animation: cirkel 5s infinite linear;
+        border-radius: 10px;
 }
 
 @keyframes cirkel {
@@ -86,6 +179,7 @@ a{
     height: 50px;
     transform: translateX(-50%);
     animation: circle 5s infinite linear;
+    z-index: 0;
 }
 @keyframes circle {
 0% {
@@ -94,4 +188,8 @@ a{
 100% {
     transform: translate(-50%, 0) rotate(360deg) translate(150px) rotate(-360deg);
 }
+}
+
+.hundis{
+    border-radius: 10px;
 }
